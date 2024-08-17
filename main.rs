@@ -31,25 +31,42 @@ fn main (){
     verify_numbers(25,37)
     */
 
-    // input de dados
+    //  --- input de dados
 
     fn convert_to_int(data: &String) -> i32{
         let input_data = data.trim().parse::<i32>().unwrap();
         return  input_data
     }
+    //
+    // let mut number1 = String::new();
+    // let mut get_number_1 =  io::stdin().read_line(&mut number1).expect("error ao ler os dados").to_string();
+    // let mut number2 = String::new();
+    // let mut get_number_2 = io::stdin().read_line(&mut number2).expect("error ao ler os dados").to_string();
+    //
+    // let convert_number1 = convert_to_int(&get_number_1);
+    // let convert_number2 = convert_to_int(&get_number_2);
+    // if convert_number1 <= convert_number2 {
+    //     println!("é menor");
+    // }else{
+    //     println!("não é menor");
+    // }
 
-    let mut number1 = String::new();
-    let mut get_number_1 =  io::stdin().read_line(&mut number1).expect("error ao ler os dados").to_string();
-    let mut number2 = String::new();
-    let mut get_number_2 = io::stdin().read_line(&mut number2).expect("error ao ler os dados").to_string();
 
-    let convert_number1 = convert_to_int(&get_number_1);
-    let convert_number2 = convert_to_int(&get_number_2);
-    if convert_number1 <= convert_number2 {
-        println!("é menor");
-    }else{
-        println!("não é menor");
-    }
+    // problema: usuario coloca um numero inteiro positivo, devemos dar o retorno da somas do algarismo desse numero
+    // exemplo: usuario coloca 25 --- o retono deve ser (2+5) = 7
+    // let mut soma = 0;
+    // let mut valor_entrada = String::new();
+    // io::stdin().read_line(&mut valor_entrada).expect("error ao ler os dados").to_string();
+    // let mut convert_entrada = convert_to_int(&valor_entrada);
+    // while convert_entrada !=0 {
+    //         let mut  resto = convert_entrada %10;
+    //         soma = soma + resto;
+    //         convert_entrada = convert_entrada /10;
+    //
+    //
+    // }
+    // println!("{}",soma)
+
 
 
 
